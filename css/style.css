@@ -105,8 +105,17 @@ span#idChkMsg::before{
 
 
 /*비밀번호 보기 */
-#wrap li span input[type=checkbox]{
-    border: 1px solid #000;
+span#pwSpanChk{
+    width: 140px;
+    color: #f40;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 40px;
+    display: inline-block;
+}
+
+span#pwSpanChk::before{
+    content: " * ";
 }
 
 
