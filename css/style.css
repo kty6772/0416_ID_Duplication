@@ -1,0 +1,109 @@
+@charset "utf-8";
+/*Reset*/
+*{
+    color: #222;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{text-decoration: none;}
+a:link{color: #222;}
+a:visited{color: #222;}
+a:hover{color: #222;}
+a:active{color: #222;}
+
+ul{list-style: none;}
+img{vertical-align: middle;}
+
+
+/*Reset*/
+
+/*div#wrap*/
+div#wrap{
+    border: 1px solid #000;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+/*div#wrap*/
+
+/*header#header*/
+#header{text-align: center;}
+
+/*header#header*/
+
+/* ID, 비밀번호 입력 */
+ul{
+    padding: 10px;
+    border: 2px solid #000;
+    margin: 10px auto;
+}
+
+li{
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+#wrap li span:first-child{
+    width: 200px;
+/*    border: 1px solid #000;*/
+    text-align: right;
+    padding-right: 20px;
+}
+
+#wrap li span:last-child{
+    flex: 1;
+    padding-left: 6px;
+}
+
+#wrap li{
+   display: -webkit-flex;
+   display: -moz-flex;
+   display: -ms-flex;
+   display: -o-flex;
+   display: flex;
+}
+
+#wrap li span input{
+    font-size: 20px;
+    width: 180px;
+}
+
+#wrap li:last-child{
+   justify-content: center;
+}
+
+#wrap li:last-child button{
+    font-size: 20px;
+    padding: 4px 16px;
+    margin: 6px;
+    cursor: pointer;
+}
+
+/* ID, 비밀번호 입력 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
