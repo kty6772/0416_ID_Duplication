@@ -37,7 +37,7 @@ div#wrap{
 /* ID, 비밀번호 입력 */
 ul{
     padding: 10px;
-    border: 2px solid #000;
+    border: 1px solid #000;
     margin: 10px auto;
 }
 
@@ -45,7 +45,7 @@ li{
     font-size: 20px;
     line-height: 30px;
     padding: 10px 0;
-    border: 1px solid #ddd;
+/*    border: 1px solid #ddd;*/
     margin: 10px 0;
 }
 
@@ -72,6 +72,8 @@ li{
 #wrap li span input{
     font-size: 20px;
     width: 180px;
+    border: none;
+    outline: none;
 }
 
 #wrap li:last-child{
@@ -83,6 +85,20 @@ li{
     padding: 4px 16px;
     margin: 6px;
     cursor: pointer;
+}
+
+/*ID 중복 메시지 출력*/
+span#idChkMsg{
+    width: 140px;
+    color: #f40;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 40px;
+    display: inline-block;
+}
+
+span#idChkMsg::before{
+    content: " * ";
 }
 
 /* ID, 비밀번호 입력 */

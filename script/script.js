@@ -16,13 +16,27 @@ $(function(){
         });
 
     if(idUseChk){
-        alert("사용가능");
+        msg = "사용가능";
     }else{
-        alert("사용중인 ID입니다.")
+        msg = "사용중인 ID";
     }
+
+        var spanChk = $("#uID").next().is("span");
+
+        if(spanChk){
+            $("span#idChkMsg").remove();
+        }
+
+        $("<span id='idChkMsg'>" + msg + "</span>").insertAfter("#uID");
+
+//        $("<span>제이쿼리에서 테스트</span>").insertAfter("#uID");
+        // 요소A를 요소 B뒤로 이동하세요
 
     });
 
+        $("button[type=reset]").click(function(){
+           $("span#idChkMsg").remove();
+        });
 
 
 });
