@@ -1,4 +1,5 @@
 $(function(){
+    /* 아이디 중복 체크 */
     $("button[type=button]").click(function(){
         var inputUID = $("#uID").val().trim(); // form 화면에서 입력한 ID
 
@@ -33,10 +34,26 @@ $(function(){
         // 요소A를 요소 B뒤로 이동하세요
 
     });
+        /* 아이디 중복 체크 */
 
-        $("button[type=reset]").click(function(){
-           $("span#idChkMsg").remove();
-        });
+    /*입력취소 버튼 클릭 아이디 중복 메시지 제거*/
+    $("button[type=reset]").click(function(){
+       $("span#idChkMsg").remove();
+    });
+        /*입력취소 버튼 클릭 아이디 중복 메시지 제거*/
+
+    /*비밀번호 보기*/
+$("input[type=checkbox]").click(function(){
+    var chkTF = $(this).prop("checked");
+    if(chkTF){
+        $("input.uPW").attr("type", "text");
+    }else{
+        $("input.uPW").attr("type", "password");
+    }
+
+//   $("input[type=password]").attr("type", "text");
+});
+        /*비밀번호 보기*/
 
 
 });

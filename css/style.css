@@ -101,6 +101,20 @@ span#idChkMsg::before{
     content: " * ";
 }
 
+/* ID 중복 출력 끝*/
+
+
+/*비밀번호 보기 */
+#wrap li span input[type=checkbox]{
+    border: 1px solid #000;
+}
+
+
+
+/*비밀번호 보기 끝 */
+
+
+
 /* ID, 비밀번호 입력 */
 
 
